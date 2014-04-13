@@ -1,0 +1,15 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+repositories { 
+	mavenCentral()
+	maven {
+		url "http://maven.twttr.com"
+	}
+}
+
+mainClassName = "com.github.ehnmark.finatragradle.App"
+
+dependencies {
+	compile "com.twitter:finatra_2.10:1.5.3"
+}
